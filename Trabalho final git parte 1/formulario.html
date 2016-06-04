@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário de Contato</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/estilo.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/bootstrap-theme.css" />
+    </head>
+    <body>
+        <section class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <h1>Contato</h1>
+                    <hr>
+                    <form id="contato" method="POST" action="http://contato-twsatc.rhcloud.com/contato-api/email">
+                        <div class="form-group">
+                            <label for="nome">Nome: </label>
+                            <input type="text" id="nome" name="nome" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail: </label>
+                            <input type="email" id="email" name="email" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone: </label>
+                            <input type="tel" id="telefone" name="telefone" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem: </label>
+                            <textarea id="mensagem" class="form-control" name="mensagem"></textarea>
+                        </div>
+                        <input id="para"  name="para" type="hidden"  value="jhonatan.samann@gmail.com"/>
+                        <input class="btn btn-primary btn-block" type="submit" />
+                    </form>
+                </div>
+            </div>
+        </section>
+        <script src="js/formulario.js"></script>
+        <script src="js/jquery-2.2.3.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>
